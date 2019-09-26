@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:checked="false"
+        android:id="@+id/navigation_menu1"
+        android:icon="@drawable/ic_library_books_black_24dp"
+        android:title="팔로잉피드" />
+
+    <item
+        android:checked="false"
+        android:id="@+id/navigation_menu2"
+        android:icon="@drawable/ic_search_black"
+        android:title="검색" />
+
+    <item
+        android:checked="false"
+        android:id="@+id/navigation_menu3"
+        android:icon="@drawable/ic_add_circle_outline_black_24dp"
+        android:title="포스트쓰기" />
+
+    <item
+        android:checked="false"
+        android:id="@+id/navigation_menu4"
+        android:icon="@drawable/ic_chat_black"
+        android:title="채팅리스트" />
+
+    <item
+        android:checked="false"
+        android:id="@+id/navigation_menu5"
+        android:icon="@drawable/icon_person_small"
+        android:title="마이페이지" />
+
+
+</menu>

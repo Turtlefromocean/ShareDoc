@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Home_all"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="@drawable/button_gray">
+
+        <ImageButton
+            android:id="@+id/btn_뒤로가기"
+            android:layout_width="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            app:srcCompat="@drawable/ic_keyboard_backspace_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="구입한 포스트"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_home_전체포스트_전체보기"
+        android:layout_width="match_parent"
+        android:layout_height="620dp" />
+
+
+
+</LinearLayout>

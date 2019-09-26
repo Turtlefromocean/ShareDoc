@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/button_gray">
+
+            <ImageButton
+                android:id="@+id/btn_뒤로가기"
+                android:layout_width="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_height="40dp"
+                android:background="@android:color/white"
+                app:srcCompat="@drawable/ic_keyboard_backspace_black_24dp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:paddingLeft="56dp"
+                android:paddingRight="56dp"
+                android:text="프로필 정보"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_저장"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:text="저장"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:textColor="#3c68ba"
+                android:background="@android:color/white"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="프로필사진"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:cardCornerRadius="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_person_black" />
+            </android.support.v7.widget.CardView>
+            <Button
+                android:id="@+id/btn_uploadPic"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="프로필 사진등록" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="필수입력정보"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="10dp">
+            <TableRow>
+                <TextView
+                    android:layout_width="90dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text=" 닉네임"/>
+                <TextView
+                    android:layout_width="270dp"
+                    android:id="@+id/tv_아이디"
+                    android:padding="2dp"
+                    android:textSize="20dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_btn_editID"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/edit"
+                    android:clickable="true"
+                    android:layout_gravity="center_vertical"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="90dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text=" 이름"/>
+                <EditText
+                    android:layout_width="270dp"
+                    android:id="@+id/etName"
+                    android:hint="이름(6자 이내)"
+                    android:singleLine = "true"
+                    android:lines = "1"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="90dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text=" 소개"
+                    android:maxLines="3"/>
+                <EditText
+                    android:layout_width="270dp"
+                    android:id="@+id/etIntroduce"
+                    android:hint="소개"/>
+            </TableRow>
+            <TableRow/>
+        </TableLayout>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="개인정보(선택)"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="10dp">
+            <TableRow/>
+            <TableRow>
+                <TextView
+                    android:layout_width="90dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text=" 소속"/>
+                <TextView
+                    android:layout_width="250dp"
+                    android:id="@+id/tv_소속위치"
+                    android:padding="2dp"
+                    android:textSize="20dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_btn_map"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    app:srcCompat="@android:drawable/ic_menu_compass" />
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="90dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text=" 관심분야"/>
+                <EditText
+                    android:layout_width="250dp"
+                    android:id="@+id/et_전공"
+                    android:hint="주관심분야(10자이내)"
+                    android:singleLine = "true"
+                    android:lines = "1"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text=" 이메일계정"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_이메일계정"
+                    android:textSize="15dp"
+                    android:ellipsize="end"
+                    android:layout_marginLeft="5dp"
+                    tools:text="test@test.com"/>
+                <Button
+                    android:id="@+id/btn_회원탈퇴"
+                    android:layout_width="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:text="회원탈퇴"
+                    android:textSize="13dp"
+                    android:layout_height="35dp"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/view_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</RelativeLayout>

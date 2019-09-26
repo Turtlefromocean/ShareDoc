@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sharedoc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.KakaoPay"></activity>
+        <activity android:name=".Activity.Map" />
+
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="ej4xnvo3yv" />
+
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Activity.Home_all" />
+        <activity
+            android:name=".Activity.ChatList"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Activity.OtherUserPage"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Activity.Search"
+            android:launchMode="singleTask" />
+        <activity android:name=".Activity.Following" />
+        <activity android:name=".Activity.Gallery" />
+        <activity android:name=".Activity.Profile" />
+        <activity android:name=".Activity.FindPassword" />
+        <activity android:name=".Activity.Chat" />
+        <activity
+            android:name=".Activity.Board"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/kakaolink_host"
+                    android:scheme="@string/kakao_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.WritePost" />
+        <activity
+            android:name=".Activity.Home"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Activity.MyPage"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.Login" />
+        <activity android:name=".Activity.Register" />
+        <activity android:name=".Activity.MainActivity" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+    </application>
+
+</manifest>

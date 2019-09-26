@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="포스트가격 :"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_문서가격"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="10000 코인 미만"
+            android:inputType="number" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="18dp">
+        <Button
+            android:id="@+id/btn_취소"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_margin="20dp"
+            android:text="취소"/>
+        <Button
+            android:id="@+id/btn_확인"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textAllCaps="false"
+            android:text="확인"/>
+    </LinearLayout>
+</LinearLayout>

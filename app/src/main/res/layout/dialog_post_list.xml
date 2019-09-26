@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="360dp"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/location" />
+        <TextView
+            android:id="@+id/tv_소속위치"
+            android:gravity="center_vertical"
+            android:layout_width="325dp"
+            android:layout_height="match_parent"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_map_post"
+        android:layout_width="360dp"
+        android:layout_height="300dp" />
+
+    <Button
+        android:id="@+id/btn_닫기"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:text="닫기" />
+
+</LinearLayout>

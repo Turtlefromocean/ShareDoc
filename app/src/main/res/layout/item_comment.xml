@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/item_write_round"
+    android:animateLayoutChanges="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_댓글_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="12dp"
+            android:text="ID"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="2dp"
+            android:text="님의 댓글"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/tv_삭제"
+            android:visibility="gone"
+            android:src="@drawable/delete_comment"
+            android:clickable="true"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"/>
+        <TextView
+            android:id="@+id/tv_작성날짜"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="2dp"
+            android:textSize="12dp"
+            tools:text="작성날짜"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_marginRight="10dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_댓글"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="3dp"
+        android:maxLines="2"
+        android:text="내용"
+        android:textSize="13dp" />
+
+    <ImageView
+        android:id="@+id/iv_더보기"
+        android:visibility="invisible"
+        android:layout_width="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_height="20dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_more" />
+
+</LinearLayout>
+
+
+
+</LinearLayout>

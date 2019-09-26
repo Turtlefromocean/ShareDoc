@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_아이디"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="닉네임(영문, 숫자, _ 15자리 제한)"
+        android:padding="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="18dp">
+        <Button
+            android:id="@+id/btn_취소"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_margin="20dp"
+            android:text="취소"/>
+        <Button
+            android:id="@+id/btn_중복검사"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textAllCaps="false"
+            android:text="중복검사"/>
+    </LinearLayout>
+</LinearLayout>

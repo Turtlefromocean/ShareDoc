@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Activity.OtherUserPage">
+
+
+    <TableLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="65dp"
+        android:weightSum="4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/youth"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="팔로워"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_팔로워수"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="3dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:text="00" />
+
+            <TextView
+                android:layout_width="15dp"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="포스트"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_포스트개수"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_marginTop="4dp"
+                android:id="@+id/btn_팔로우"
+                android:layout_width="0dp"
+                android:layout_height="27dp"
+                android:layout_weight="2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/nonfollow"
+                tools:text="팔로우 하기" />
+
+            <TextView
+                android:layout_width="15dp"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_marginTop="4dp"
+                android:id="@+id/btn_채팅"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="0dp"
+                android:layout_height="27dp"
+                android:layout_weight="2"
+                android:background="@drawable/nonfollow"
+                android:text="채팅하기" />
+
+
+        </TableRow>
+
+        <TableRow />
+    </TableLayout>
+
+<TextView
+    android:id="@+id/tv_아이디"
+    android:layout_width="0dp"
+    android:layout_height="50dp"
+    tools:text="사용자 이름"
+    android:background="@drawable/button_gray"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textColor="@android:color/black"
+    android:textSize="18dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/CardView_MyPage"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_아이디">
+
+        <ImageView
+            android:id="@+id/iv_프로필사진"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            tools:srcCompat="@drawable/ic_person_black" />
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+<android.support.constraint.Guideline
+    android:id="@+id/guideline"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_begin="172dp" />
+
+<TextView
+    android:id="@+id/tv_introduce"
+    android:layout_width="381dp"
+    android:layout_height="45dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="14dp"
+    tools:text="자기소개"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_이름" />
+
+<View
+    android:id="@+id/view"
+    android:layout_width="wrap_content"
+    android:layout_height="2dp"
+    android:layout_marginTop="1dp"
+    android:background="@android:color/darker_gray"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_introduce" />
+
+<android.support.constraint.Guideline
+    android:id="@+id/guideline2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_begin="580dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_내마켓"
+        android:layout_width="395dp"
+        android:layout_height="430dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:maxHeight="450dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_navigation_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_introduce"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/tv_이름"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_introduce"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CardView_MyPage"
+        tools:text="이름" />
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@color/background"
+        app:itemIconTint="@color/iconText"
+        app:itemTextColor="@color/iconText"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_bottom" >
+
+        <TextView
+            android:id="@+id/tv_btn_홈"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"/>
+    </android.support.design.widget.BottomNavigationView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
