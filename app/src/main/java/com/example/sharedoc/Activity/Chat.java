@@ -241,7 +241,7 @@ public class Chat extends AppCompatActivity {
         Log.i("Push", gson.toJson(notificationModel));
         Request request = new Request.Builder()
                 .header("Content-Type", "application/json")
-                .addHeader("Authorization", "key=" + "AAAAee5D9oM:APA91bEKR12Wg6sXV6Txijme0B4hi-Eni_wXpDQRumUIb2d8h1n2NWZEgC-Vxvr3g7ZpuUgSb92_F4v1xEPPA4KwVNVJfVAh1mTk0eA9tvLSiVbXPzSKCNuqcqVC82z2LR-lKHN27YBl")
+                .addHeader("Authorization", "key=" + "{Authorization KEY}")
                 .url("https://fcm.googleapis.com/fcm/send")
                 .post(requestBody)
                 .build();
