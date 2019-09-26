@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ShareDoc</string>
-    <string name="kakao_app_key">7f945d7f726a20da13405f1f12f288e4</string>
-    <string name="kakao_scheme">kakao7f945d7f726a20da13405f1f12f288e4</string>
+    <string name="kakao_app_key">{KAKAO APP KEY 입력}</string>
+    <string name="kakao_scheme">{KAKAO SCHEME 입력}</string>
     <string name="kakaolink_host">kakaolink</string>
     <string name="이용약관">서비스 이용약관 목록\n
 제 1 장 총 칙\n
